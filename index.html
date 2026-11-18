@@ -18,9 +18,9 @@
     .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
     header { position: sticky; top: 0; z-index: 100; background: rgba(250,248,245,0.97); backdrop-filter: blur(10px); border-bottom: 1px solid #eee; }
-    .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
-    .logo img { height: 48px; }
-    nav { display: flex; gap: 32px; }
+    .header-inner { display: flex; justify-content: center; align-items: center; padding: 16px 0; }
+    .logo img { height: 52px; }
+
     .btn { display: inline-block; background: var(--dark); color: white; padding: 14px 28px; transition: 0.3s; border: 1px solid transparent; }
     .btn:hover { background: var(--gold); }
     .btn-outline { background: transparent; border: 1px solid white; color: white; }
@@ -100,13 +100,13 @@
     .footer-logos img { height: 46px; filter: brightness(0) invert(1); }
 
     @media (max-width: 768px) {
-      nav { display: none; }
       .form-row { grid-template-columns: 1fr; }
       .hero { padding-top: 8vh; }
       .hero-content { height: 78vh; }
-      .hero-bottom { padding-bottom: 5vh; }
+      .hero-bottom { padding-bottom: 6vh; }
       .carey-section { min-height: 60vh; }
       .work-slide img { height: 380px; }
+      .logo img { height: 44px; }
     }
   </style>
 </head>
@@ -117,13 +117,6 @@
     <a href="/" class="logo">
       <img src="https://raw.githubusercontent.com/codelyoon/refined-custom-jewellers/312ae0f7ac0938de140e16c9cb66d9996e635bc7/Horizontal_Logo-removebg-preview.png" alt="Refined Custom Jewellers">
     </a>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/blog-1">Blog</a>
-      <a href="/contact">Contact</a>
-    </nav>
-    <a href="#inquiry" class="btn">Start Your Ring</a>
   </div>
 </header>
 
@@ -169,7 +162,6 @@
   </div>
 </section>
 
-<!-- Work Carousel (updated: Example2, Example3, new Example6, new Example7) -->
 <section>
   <div class="container">
     <h2 class="section-title">Recent Custom Work</h2>
