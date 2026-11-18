@@ -1,1 +1,219 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Refined Custom Jewellers | Custom Engagement Rings in Cochrane, Alberta</title>
+  <meta name="description" content="Custom engagement rings designed in Cochrane, Alberta. Canadian diamonds, ethical sourcing, and heirloom-quality jewellery by Carey Spanbauer Wilde." />
+  <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/68ed66b5c28c276cd5e899fe/2e40745f-6860-486b-9fee-e84d91c585f3/favicon.ico?format=100w" />
+  <link rel="preconnect" href="https://images.squarespace-cdn.com">
+  <link rel="preconnect" href="https://file.squarespace-cdn.com" crossorigin>
+  <style>
+    @font-face { font-family: 'Playfair Display'; font-weight: 700; font-display: swap; src: url('https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/3a1a1667-9c86-488f-99d9-0ac1c35de47e/latin.woff2') format('woff2'); }
+    @font-face { font-family: 'PT Serif'; font-weight: 400; font-display: swap; src: url('https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/0bda225b-cc2b-432d-8ec6-1f382c159edc/latin.woff2') format('woff2'); }
+    :root {
+      --gold: #b8956a;
+      --dark: #1a1a1a;
+      --light: #faf8f5;
+      --text: #2c2c2c;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'PT Serif', Georgia, serif; color: var(--text); background: var(--light); line-height: 1.6; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; letter-spacing: -0.3px; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
+    /* Header */
+    header { position: sticky; top: 0; z-index: 100; background: rgba(250,248,245,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #eee; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+    .logo img { height: 70px; }
+    nav { display: flex; gap: 32px; font-size: 1.05rem; }
+    nav a:hover { color: var(--gold); }
+    .btn { display: inline-block; background: var(--dark); color: white; padding: 14px 28px; font-size: 0.95rem; letter-spacing: 0.5px; transition: 0.3s; }
+    .btn:hover { background: var(--gold); }
+    .btn-outline { background: transparent; border: 1px solid white; color: white; }
+
+    /* Hero */
+    .hero { position: relative; min-height: 85vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: url('https://images.squarespace-cdn.com/content/v1/68ed66b5c28c276cd5e899fe/348f18f0-3a07-4217-89d8-9083ecfc63dc/IMG_1977.jpg') center/cover no-repeat; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.45); }
+    .hero-content { position: relative; z-index: 1; max-width: 800px; padding: 40px 20px; }
+    .hero h1 { font-size: clamp(2.8rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 16px; }
+    .hero p { font-size: 1.25rem; margin-bottom: 32px; opacity: 0.95; }
+
+    /* Sections */
+    section { padding: 100px 0; }
+    .section-title { text-align: center; font-size: 2.6rem; margin-bottom: 16px; }
+    .section-sub { text-align: center; max-width: 680px; margin: 0 auto 48px; font-size: 1.1rem; }
+
+    /* Process */
+    .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px; margin-top: 60px; }
+    .process-item { text-align: center; }
+    .process-item h3 { margin: 16px 0 8px; font-size: 1.4rem; }
+
+    /* Founder */
+    .founder { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .founder img { width: 100%; border-radius: 4px; }
+    .founder h2 { font-size: 2.4rem; margin-bottom: 20px; }
+
+    /* Gallery teaser */
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .gallery-grid img { width: 100%; height: 420px; object-fit: cover; border-radius: 4px; }
+
+    /* Testimonials */
+    .testimonials { background: #111; color: white; text-align: center; }
+    .testimonial { max-width: 800px; margin: 0 auto; }
+    .testimonial p { font-size: 1.35rem; font-style: italic; margin-bottom: 16px; }
+
+    /* CTA */
+    .cta { text-align: center; background: var(--light); }
+    .cta h2 { font-size: 2.8rem; margin-bottom: 20px; }
+
+    /* Footer */
+    footer { background: #111; color: #ddd; padding: 60px 0 30px; font-size: 0.95rem; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px; }
+    .footer-grid h4 { color: white; margin-bottom: 12px; }
+    .footer-logos { display: flex; gap: 24px; align-items: center; margin-top: 20px; }
+    .footer-logos img { height: 50px; filter: brightness(0) invert(1); }
+    .socials { display: flex; gap: 16px; margin-top: 12px; }
+    .socials a { color: white; font-size: 1.1rem; }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .founder { grid-template-columns: 1fr; }
+      .hero { min-height: 70vh; }
+      section { padding: 70px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <img src="//images.squarespace-cdn.com/content/v1/68ed66b5c28c276cd5e899fe/7fb11732-ed40-44ae-be92-a30cfdbcf1aa/Vertical+Logo.jpg?format=1500w" alt="Refined Custom Jewellers">
+    </a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/blog-1">Blog</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <a href="/contact" class="btn">Start Your Ring</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Your Custom Engagement Ring<br>Starts Here</h1>
+    <p>Designed in Cochrane, Alberta. Made with Canadian diamonds and thoughtful craftsmanship.</p>
+    <a href="/contact" class="btn btn-outline">Book a Private Consultation</a>
+  </div>
+</section>
+
+<!-- How it works -->
+<section>
+  <div class="container">
+    <h2 class="section-title">How We Create Your Engagement Ring</h2>
+    <p class="section-sub">A simple, personal process from first conversation to finished ring.</p>
+    <div class="process-grid">
+      <div class="process-item">
+        <h3>1. Tell Me Your Story</h3>
+        <p>Share your vision, budget, and any stones or ideas you already have.</p>
+      </div>
+      <div class="process-item">
+        <h3>2. Design Together</h3>
+        <p>We refine the design, choose Canadian diamonds, and perfect every detail.</p>
+      </div>
+      <div class="process-item">
+        <h3>3. Craft & Deliver</h3>
+        <p>Your ring is handmade and delivered as a true heirloom.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Founder -->
+<section style="background:#fff;">
+  <div class="container founder">
+    <div>
+      <img src="https://images.squarespace-cdn.com/content/v1/68ed66b5c28c276cd5e899fe/42f664c5-e5c4-426a-9175-f077ae23b540/1746208017467.jpeg" alt="Carey Spanbauer Wilde">
+    </div>
+    <div>
+      <h2>Meet Carey</h2>
+      <p>Hi, I’m Carey — a certified applied jeweller, GIA-trained diamond grader, and proud member of the Canadian Jewellers Association. Based in Cochrane, Alberta, I create one-of-a-kind engagement rings and fine jewellery with transparency, craftsmanship, and genuine connection.</p>
+      <p style="margin-top:16px;">Everyone should know their jeweller. Whether it’s a custom engagement ring or resizing a family piece, every creation is personal.</p>
+      <a href="/about" class="btn" style="margin-top:24px;">Learn More About Carey</a>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery teaser -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Recent Custom Engagement Rings</h2>
+    <p class="section-sub">Every ring is designed around the person wearing it.</p>
+    <div class="gallery-grid">
+      <img src="https://images.squarespace-cdn.com/content/v1/68ed66b5c28c276cd5e899fe/38652b29-13ce-4f3e-9075-51583613b01e/4eaed0b8-e7e9-4608-8ab9-37fc1185b7b0.jpg" alt="Custom engagement ring">
+      <img src="https://images.squarespace-cdn.com/content/v1/68ed66b5c28c276cd5e899fe/853dfc20-20ef-4f38-9661-77a7f0d111ca/493e15109062f40187347688216b5340.jpg" alt="Custom engagement ring">
+      <img src="https://images.squarespace-cdn.com/content/v1/68ed66b5c28c276cd5e899fe/ff00f625-bc6e-43f6-b839-044d83f8410f/e12d678c-0380-4104-9d8c-5fe50637dd33.png" alt="Custom engagement ring">
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="/contact" class="btn">Start Your Custom Ring</a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title" style="color:white;">What Clients Say</h2>
+    <div class="testimonial">
+      <p>“Carey was phenomenal at guiding me through the process of creating a custom engagement ring. Super helpful, very affordable. I will definitely be using her for any jewelry related projects in the future!”</p>
+      <strong>— M.G.</strong>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="cta">
+  <div class="container">
+    <h2>Ready to Design Your Engagement Ring?</h2>
+    <p style="font-size:1.2rem; margin-bottom:32px;">Book a private consultation or send me your ideas today.</p>
+    <a href="/contact" class="btn">Get Started</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:carey@refinedcustomjewellers.com">carey@refinedcustomjewellers.com</a></p>
+        <p><a href="tel:5873333038">(587) 333-3038</a></p>
+        <p>Cochrane, Alberta</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Appointments Requested</p>
+        <p>Monday – Friday<br>9:30am – 4:30pm</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="https://www.instagram.com/refinedcustomjewellers" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/refinedcustomjewellers/" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-logos">
+      <img src="https://images.squarespace-cdn.com/content/v1/68ed66b5c28c276cd5e899fe/b44894c8-951b-4a72-b243-516f60caa7c7/CJA-Logo-Sign-of-Trust-Black-TB-scaled.webp" alt="Canadian Jewellers Association">
+      <img src="https://images.squarespace-cdn.com/content/v1/68ed66b5c28c276cd5e899fe/84426dae-be63-4048-8aea-9695fafeea16/Horizontal+Logo.jpg" alt="Refined Custom Jewellers">
+    </div>
+    <p style="margin-top:40px; text-align:center; opacity:0.6;">© Refined Custom Jewellers. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
